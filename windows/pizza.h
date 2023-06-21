@@ -11,8 +11,7 @@ typedef enum
 {
     fromage,
     vegetarienne,
-    fruits_de_mer,
-    poivrons
+    fruits_de_mer
 } type_pizza;
 
 class pizza
@@ -28,36 +27,42 @@ public:
 
 class pizza_fromage_brest : public pizza
 {
+public:
     std::string get_name() override;
     std::string get_ingredients() override;
 };
 
 class pizza_vegetarienne_brest : public pizza
 {
+public:
     std::string get_name() override;
     std::string get_ingredients() override;
 };
 
 class pizza_fruits_de_mer_brest : public pizza
 {
+public:
     std::string get_name() override;
     std::string get_ingredients() override;
 };
 
 class pizza_fromage_strasbourg : public pizza
 {
+public:
     std::string get_name() override;
     std::string get_ingredients() override;
 };
 
 class pizza_vegetarienne_strasbourg : public pizza
 {
+public:
     std::string get_name() override;
     std::string get_ingredients() override;
 };
 
 class pizza_fruits_de_mer_strasbourg : public pizza
 {
+public:
     std::string get_name() override;
     std::string get_ingredients() override;
 };
